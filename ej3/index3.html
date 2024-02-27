@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>peso corporal</title>
+</head>
+<body>
+    <div class="flex flex-row justify-evenly items-center w-full h-screen p-5 bg-black">
+
+        <!-- CALCULA ALTURA Y PESO -->
+        <section class="flex flex-col justify-center items-start w-80 h-80 border-4 border-red-600 rounded bg-slate-300">
+            <label class="p-2"  for="">
+                <h2 class="font-bold text-2xl">Estatura</h2>
+                <p>En centímetros</p>
+                <input id="altura" type="text" placeholder="Ej: 174">
+                <h2 class="font-bold text-2xl pt-5">Peso</h2>
+                <p>En kilogramos</p>
+                <input id="peso" type="text" placeholder="Ej: 65">
+            </label>
+            <button id="btnCalcular" class="m-3 p-2 border-2 border-black bg-amber-300">CALCULATE</button>
+        </section>
+
+        <!-- CALCULA INDICE DE MASA CORPORAL -->
+        <section class="flex flex-col justify-center items-start w-80 h-40 border-4 border-red-600 rounded bg-slate-300">
+            <label class="p-2"  for="">
+                <h2 class="font-bold text-2xl">Resultado</h2>
+                <p>Su índice de masa corporal es:
+                    <span class="flex flex-col justify-center items-center bg-white" id="resultado"></span>
+                </p>
+                
+            </label>
+        </section>
+    </div>
+    
+    <script src="./main3.js"></script>
+</body>
+</html>
